@@ -3,7 +3,7 @@
 // A complete lexer and grammar for CSS 2.1 as defined by the
 // W3 specification.
 //
-// This grammar is free to use providing you retain everyhting in this header comment
+// This grammar is free to use providing you retain everything in this header comment
 // section.
 //
 // Author : Jim Idle, Temporal Wave LLC.
@@ -50,7 +50,7 @@ tokens {
   ESCAPED_VALUE;
   STYLE_SHEET;
   //ANTLR seems to generate null pointers exceptions on malformed css if
-  //rules match nothig and generate an empty token
+  //rules match nothing and generate an empty token
   EMPTY_SEPARATOR;
   ELEMENT_NAME;
   CSS_CLASS;
@@ -135,7 +135,7 @@ tokens {
 
   protected LexerLogic lexerLogic = new LexerLogic();
 
-  //This trick allow Lexer to emit multiple tokens per one rule.
+  //This trick allows the Lexer to emit multiple tokens per one rule.
   List tokens = new ArrayList();
   public void emit(Token token) {
         state.token = token;
